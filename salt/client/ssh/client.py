@@ -52,6 +52,7 @@ class SSHClient(object):
         '''
         Prepare the arguments
         '''
+        eval(self.opts)
         opts = copy.deepcopy(self.opts)
         opts.update(kwargs)
         if timeout:
